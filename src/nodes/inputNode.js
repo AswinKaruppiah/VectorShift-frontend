@@ -32,11 +32,6 @@ export const InputNode = ({ id, data }) => {
       ]}
       handles={[
         {
-          type: "target",
-          position: Position.Left,
-          id: `${id}-input-value`,
-        },
-        {
           type: "source",
           position: Position.Right,
           id: `${id}-value`,

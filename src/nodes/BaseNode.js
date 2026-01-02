@@ -1,4 +1,16 @@
-// BaseNode.jsx
+/**
+ * BaseNode
+ * --------
+ * A reusable React Flow node component that renders:
+ * - A header with title
+ * - Dynamic input fields (text / select)
+ * - Auto-resizing textarea
+ *
+ * Designed to be used inside React Flow diagrams.
+ *
+ * @component
+ */
+
 import { Handle } from "reactflow";
 import React from "react";
 import TextField from "@mui/material/TextField";
@@ -16,7 +28,7 @@ export const BaseNode = ({
 
   const handleChange = (e) => {
     const el = e.target;
-
+    el.style.height = "auto";
     if (el.scrollHeight > MAX_HEIGHT) {
       el.style.height = MAX_HEIGHT + "px";
       el.style.overflowY = "auto";

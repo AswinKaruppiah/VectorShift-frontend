@@ -36,11 +36,6 @@ export const OutputNode = ({ id, data }) => {
           position: Position.Left,
           id: `${id}-value`,
         },
-        {
-          type: "source",
-          position: Position.Right,
-          id: `${id}-output-value`,
-        },
       ]}
     />
   );

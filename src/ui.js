@@ -12,6 +12,13 @@ import { OutputNode } from "./nodes/outputNode";
 import { TextNode } from "./nodes/textNode";
 
 import "reactflow/dist/style.css";
+import {
+  TestNode1,
+  TestNode2,
+  TestNode3,
+  TestNode4,
+  TestNode5,
+} from "./nodes/DemoTestNodes";
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
@@ -20,6 +27,11 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  // testNode1: TestNode1,
+  // testNode2: TestNode2,
+  // testNode3: TestNode3,
+  // testNode4: TestNode4,
+  // testNode5: TestNode5,
 };
 
 const selector = (state) => ({

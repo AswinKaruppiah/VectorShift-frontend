@@ -41,7 +41,7 @@ isDag: ${rawData.data.is_dag}`
         justifyContent: "center",
       }}
     >
-      <button className="submit-btn" onClick={handleSubmit}>
+      <button disabled={loading} className="submit-btn" onClick={handleSubmit}>
         {loading ? "loading..." : "Submit"}
       </button>
     </div>
